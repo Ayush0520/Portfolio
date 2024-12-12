@@ -1,0 +1,4 @@
+-> flex: Makes the div a flex container, aligning child elements horizontally by default.
+-> justify-between: Distributes space between child elements, pushing them to the far left and right.
+-> items-center: Vertically centers the items in the container.
+-> p-4: Adds padding on all sides (p stands for padding, and 4 is a standard spacing size in Tailwind).
