@@ -20,10 +20,18 @@ const Navbar = () => {
     { name: 'About', link: "/about" },
     { name: 'Blogs', link: "/blog" },
     {
-      name: 'Contact',
-      link: "#",
+      name: 'CONTACT',
+      link: "#contact",
       onClick: () => {
-        window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        const footer = document.getElementById('contact');
+        if (footer) {
+          footer.scrollIntoView({ behavior: 'smooth' });
+        } else {
+          window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth'
+          });
+        }
       },
     },
   ];
@@ -117,24 +125,24 @@ const Navbar = () => {
             </li>
           ))}
 
-          <li>
-            <a
-              href="/path-to-resume.pdf"
-              download="Ayush_Resume.pdf"
-              className="group relative flex items-center justify-center w-32 h-10 border-2 border-gray-300 rounded-full text-gray-300 font-semibold shadow-md transition-all duration-300 hover:bg-gray-300 hover:text-gray-800 overflow-hidden"
-            >
-              <span
-                className="absolute inset-0 flex items-center justify-center transition-transform duration-300 group-hover:-translate-y-full"
+          <li className="relative group">
+            <div className="flex gap-2">
+              <a
+                href="Ayush_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="group relative flex items-center justify-center w-32 h-10 border-2 border-gray-300 rounded-l-full text-gray-300 font-semibold shadow-md transition-all duration-300 hover:bg-gray-300 hover:text-gray-800"
               >
-                Resume
-              </span>
-
-              <span
-                className="absolute inset-0 flex items-center justify-center text-xl transition-transform duration-300 translate-y-full group-hover:translate-y-0"
+                <span>View Resume</span>
+              </a>
+              <a
+                href="Ayush_Resume.pdf"
+                download
+                className="flex items-center justify-center w-10 h-10 border-2 border-gray-300 rounded-r-full text-gray-300 hover:bg-gray-300 hover:text-gray-800 transition-all duration-300"
               >
                 <FaDownload />
-              </span>
-            </a>
+              </a>
+            </div>
           </li>
         </ul>
 
@@ -177,15 +185,51 @@ const Navbar = () => {
                       transition={{ delay: index * 0.1 }}
                       className="relative group"
                     >
-                      <Link
-                        to={link.link}
-                        onClick={() => setOpen(false)}
-                        className="hover:text-gray-300 transition-all duration-300 inline-block"
-                      >
-                        {link.name}
-                      </Link>
+                      {link.onClick ? (
+                        <button
+                          onClick={() => {
+                            link.onClick();
+                            setOpen(false);
+                          }}
+                          className="hover:text-gray-300 transition-all duration-300 inline-block"
+                        >
+                          {link.name}
+                        </button>
+                      ) : (
+                        <Link
+                          to={link.link}
+                          onClick={() => setOpen(false)}
+                          className="hover:text-gray-300 transition-all duration-300 inline-block"
+                        >
+                          {link.name}
+                        </Link>
+                      )}
                     </motion.li>
                   ))}
+                  <motion.li
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: navLinks.length * 0.1 }}
+                    className="pt-4 flex justify-center gap-4"
+                  >
+                    <a
+                      href="Ayush_Resume.pdf"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center gap-2 px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-black transition-all duration-300"
+                      onClick={() => setOpen(false)}
+                    >
+                      <span>View</span>
+                    </a>
+                    <a
+                      href="Ayush_Resume.pdf"
+                      download
+                      className="inline-flex items-center gap-2 px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-black transition-all duration-300"
+                      onClick={() => setOpen(false)}
+                    >
+                      <FaDownload />
+                    </a>
+                  </motion.li>
                 </ul>
               </motion.div>
             </motion.div>
