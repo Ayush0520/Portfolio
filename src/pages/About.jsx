@@ -265,7 +265,7 @@ const About = () => {
   };
 
   return (
-    <Layout title="About Page" description="About page of the Website.">
+    <Layout title="Ayush's Portfolio - About Page" description="About page of the Website.">
       <motion.section
         initial="hidden"
         whileInView="visible"

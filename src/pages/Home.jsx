@@ -12,7 +12,7 @@ import Achievement from "../components/Achievement";
 const Home = () => {
   
   return (
-    <Layout title="Home Page" description="Landing page of the Website.">
+    <Layout title="Ayush's Portfolio - Home Page" description="Landing page of the Website.">
       <section>
         {/* Intro Section */}
         <div className="bg-gradient-to-b from-[#f0f4f8] to-[#e8eef3] min-h-screen flex items-center relative pt-16 overflow-hidden">
