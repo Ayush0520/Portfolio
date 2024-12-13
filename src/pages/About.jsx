@@ -4,6 +4,14 @@ import { GiStarMedal } from 'react-icons/gi';
 import { PiStudentFill } from 'react-icons/pi';
 import { FaAngleDoubleDown } from 'react-icons/fa';
 import { motion } from 'framer-motion';
+import rishikeshImg from '../assets/IMG_2030.jpg'
+import gate from '../assets/gate.jpg';
+import joshimath from '../assets/joshimath.jpg';
+import csmt from '../assets/CSMT.jpg';
+import mones from '../assets/Monestary.jpg'
+import bill from '../assets/Billing.jpg';
+import mac from '../assets/mac.jpg';
+import profile from '../assets/profile.jpg';
 
 // Centralized data configuration
 const aboutData = {
@@ -12,7 +20,7 @@ const aboutData = {
     title: "About Me",
   },
   profile: {
-    image: "https://static.vecteezy.com/system/resources/previews/047/915/811/non_2x/graduated-from-university-and-college-happy-graduated-students-wearing-cap-cheerful-people-silhouette-graduation-ceremony-vector.jpg",
+    image: profile,
     description: "I'm a passionate developer, designer, and problem-solver who has been creating impactful web and mobile experiences since 2022. I specialize in crafting accessible, high-performance, and user-friendly solutions while maintaining a creative edge. With a hustler mindset and a positive outlook, I thrive on tackling challenges and bringing innovative ideas to life."
   },
   cards: [
@@ -98,59 +106,71 @@ const travelData = {
   },
   places: [
     {
-      image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da",
-      name: "Paris, France",
-      description: "Exploring the city of lights and romance under the iconic Eiffel Tower",
-      height: "h-[400px]"
+      image: rishikeshImg,
+      name: "Rishikesh, Uttrakhand, India",
+      description: "Nestled in the foothills of the Himalayas, Rishikesh is a serene destination known as the 'Yoga Capital of the World,' offering spiritual retreats, adventure sports like river rafting, and breathtaking views of the Ganges.",
+      height: "h-[550px]"
     },
     {
-      image: "https://images.unsplash.com/photo-1480796927426-f609979314bd",
-      name: "Tokyo, Japan",
-      description: "Immersing in the perfect blend of tradition and futuristic innovation",
-      height: "h-[300px]"
-    },
-    {
-      image: "https://images.unsplash.com/photo-1506973035872-a4ec16b8e8d9",
-      name: "Santorini, Greece",
-      description: "Breathtaking sunsets over the Aegean Sea",
+      image: "https://media1.thrillophilia.com/filestore/l5stwgse3qt889ohvpojpa13ftp0_Mall_Road_Shimla_1.jpg?w=400&dpr=2",
+      name: "Mall Road, Shimla, Himachal Pradesh, India",
+      description: "A bustling promenade offering colonial charm, vibrant shops, and panoramic mountain views.",
       height: "h-[500px]"
     },
     {
-      image: "https://media.assettype.com/outlooktraveller%2Fimport%2Foutlooktraveller%2Fpublic%2Fuploads%2Farticles%2Fexplore%2FDepositphotos_66016481_S.jpg?w=1024&auto=format%2Ccompress&fit=max",
-      name: "Swiss Alps",
-      description: "Conquering peaks and embracing nature's grandeur",
+      image: gate,
+      name: "Gateway of India, Mumbai, India",
+      description: "An iconic monument overlooking the Arabian Sea, symbolizing Mumbai's rich history and a popular hub for cultural and architectural exploration.",
       height: "h-[350px]"
     },
     {
-      image: "https://lp-cms-production.imgix.net/features/2017/09/dubai-marina-skyline-2c8f1708f2a1.jpg?auto=compress&fit=crop&format=auto&q=50&w=1200&h=800",
-      name: "Dubai, UAE",
-      description: "Where modern architecture meets desert mystique",
+      image: csmt,
+      name: "CSMT, Mumbai, India",
+      description: "A stunning blend of Victorian Gothic architecture and India's vibrant railway heritage.",
       height: "h-[450px]"
     },
     {
       image: "https://www.tourmyindia.com/socialimg/dharamshala-himachal-tourism.jpg",
-      name: "Himachal Pradesh, India",
-      description: "A serene escape to snow-capped mountains and lush valleys",
+      name: "HPCA Stadium, Dharamshala, Himachal Pradesh, India",
+      description: "A stunning cricket stadium nestled amidst the majestic snow-capped Himalayas, offering a breathtaking sporting experience.",
       height: "h-[400px]"
     },
     {
       image: "https://uttarakhandtriptrek.com/wp-content/uploads/2019/02/Devprayag-1024x677.jpg",
-      name: "Uttarakhand, India",
-      description: "The land of gods and breathtaking Himalayan landscapes",
+      name: "Devprayag, Uttarakhand, India",
+      description: "The sacred confluence of rivers Bhagirathi and Alaknanda, marking the origin of the holy Ganges amidst serene Himalayan beauty.",
       height: "h-[400px]"
     },
     {
-      image: "https://www.tourmyindia.com/socialimg/dharamshala-himachal-tourism.jpg",
-      name: "Himachal Pradesh, India",
-      description: "A serene escape to snow-capped mountains and lush valleys",
+      image: joshimath,
+      name: "Kuari Trek, Uttarakhand, India",
+      description: "Embark on a breathtaking journey through snow-capped peaks, dense forests, and panoramic Himalayan vistas.",
       height: "h-[400px]"
     },
     {
       image: "https://images.unsplash.com/photo-1524492412937-b28074a5d7da",
-      name: "Paris, France",
-      description: "Exploring the city of lights and romance under the iconic Eiffel Tower",
+      name: "Taj Mahal, Agra, India",
+      description: "Admiring the timeless beauty of this marble masterpiece, a symbol of love and one of the Seven Wonders of the World.",
       height: "h-[400px]"
     },
+    {
+      image: bill,
+      name: "Bir Billing, Himachal Pradesh, India",
+      description: "A world-renowned paragliding destination offering panoramic views of lush valleys and Himalayan landscapes.",
+      height: "h-[350px]"
+    },
+    {
+      image: mones,
+      name: "Norbulingka Monastery, Dharamshala, Himachal Pradesh, India",
+      description: "A serene Tibetan cultural center showcasing exquisite craftsmanship, vibrant art, and peaceful gardens.",
+      height: "h-[450px]"
+    },
+    {
+      image: mac,
+      name: "Macleod Ganj, Dharamshala, Himachal Pradesh, India",
+      description: "A vibrant Tibetan hub nestled in the Himalayas, known for its monasteries, bustling cafes, and breathtaking mountain views.",
+      height: "h-[450px]"
+    }    
   ]
 };
 
