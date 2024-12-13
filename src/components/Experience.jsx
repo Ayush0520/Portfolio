@@ -9,11 +9,11 @@ const Experience = () => {
       role: "Software Developer",
       company: "GEP (Full-time)",
       description: [
-        "Specialize in building cross-platform mobile applications using React Native, with a strong emphasis on performance, seamless user experiences, and efficient code architecture.",
-        "Demonstrated expertise in API integration and efficient state management using Redux, enhancing application responsiveness and reliability.",
-        "Contributed to updating the base architecture of the application, improving scalability and maintainability for future development.",
+        "Spearheaded the integration of Field Services application into the Smart application, enhancing functionality, streamlining workflows, and improving operational efficiency across the app ecosystem.",
+        "Revamping and modernizing the architecture of the Smart app, replacing legacy systems with a scalable and high-performance structure to boost speed, maintainability, and user experience.",
+        "Overseeing and maintaining the Inventory application, managing bug fixes and ensuring stable performance until its integration into the Smart platform.",
       ],
-      technologies: ["React Native", "Redux", "Mobile Development", "Scalability"],
+      technologies: ["React Native", "Redux", "Mobile Development", "Code Refactoring"],
     },
     {
       year: "Jan, 2022 – Dec, 2023",
@@ -28,51 +28,51 @@ const Experience = () => {
     },
     {
       year: "Jul, 2023 – Dec, 2023",
-      role: " Web Developer",
-      company: "IIITD",
+      role: "Web Developer",
+      company: "IIITD (in collaboration with the Ph.D. Admin Office and Prof. Pankaj Jalote)",
       description: [
-        "Developed and deployed a Ph.D. Management Portal on the college network in collaboration with the Ph.D. Admin Office and Prof. Pankaj Jalote, streamlining academic administrative tasks for Ph.D. administrators and students.",
-        "Automated critical processes, including:",
-        "Student Database Maintenance: Profiles, Yearly Reviews, Thesis Reviews.",
-        "Stipend Management and Contingency Logbook updates.",
-        "Exam Invigilation Duty Allotment with an optimized algorithm.",
-        "Implemented an Exam Invigilation Algorithm, currently in use by the college since March 2023, successfully allocating duties for 7+ exam seasons.",
+        "Designed, developed, and deployed a Ph.D. Management Portal on the college network, streamlining academic administrative tasks for Ph.D. administrators and students.",
+        "Student Database Management: Streamlined profile creation, yearly reviews, and thesis review processes.",
+        "Stipend Management: Automated stipend tracking and contingency logbook updates for improved accuracy.",
+        "Exam Invigilation Duty Allocation: Engineered and implemented an optimized algorithm for fair and efficient duty assignment.",
+        "Developed and deployed the Exam Invigilation Algorithm, successfully operational since March 2023, and used across 7+ exam seasons to allocate invigilation duties seamlessly.",
       ],
-      technologies: ["Django", "ReactJS", "TailwindCSS", "SQL", "Academic Portal"],
+      technologies: ["Django", "ReactJS", "TailwindCSS", "SQL", "Automation", "Web Development"]
     },
     {
       year: "Jul, 2023 – Dec, 2023",
       role: "VR Developer",
       company: "Melange Lab, IIITD",
       description: [
-        "Developed a cutting-edge 3D Printing Machine Virtual Reality (VR) model, leveraging advanced technologies and innovative design principles.",
-        "Utilized OpenXR Libraries to ensure seamless compatibility and interoperability across various VR platforms, enhancing user experience and accessibility.",
-        "Integrated Eye Tracking functionality specifically designed for Oculus Pro devices, enabling precise and intuitive control within the virtual environment."
+        "Developed an immersive 3D Printing Machine Virtual Reality (VR) model for a research study evaluating the redundancy principle from the Cognitive Theory of Multimedia Learning (CTML) in 3D VR-based learning environments.",
+        "Incorporated advanced Eye-Tracking functionality for Oculus Pro devices and processed user data to extract Blink Rate, Saccade Values, and Fixation Metrics, enabling in-depth analysis of user behavior and experience.",
+        "Leveraged user behavior insights to iteratively enhance the VR model, optimizing learning experiences for factual, conceptual, and procedural knowledge acquisition in immersive environments.",
+        "Presented the VR model at RIISE 2024, IIIT Delhi’s Annual Research Expo, showcasing its innovative design, technical advancements, and research relevance."
       ],
-      technologies: ["Virtual Reality", "OpenXR", "Oculus Pro", "Unity Game Engine"],
+      technologies: ["Virtual Reality", "OpenXR", "Oculus Pro", "Eye-Tracking", "Unity Game Engine", "User Experience Analysis"]
     },
     {
       year: "May, 2023 – July, 2023",
       role: "Software Engineer Intern",
       company: "GEP Worldwide",
       description: [
-        "Developed a robust Console Application using C# to streamline bulk data uploads from Excel spreadsheets to MySQL databases, significantly improving operational efficiency.",
-        "Implemented automated data entry processes, reducing manual errors and enhancing data accuracy compared to traditional methods.",
-        "Engineered a practical software solution that optimized operational workflows, showcasing strong software development and problem-solving skills.",
-        "Successfully deployed the application to production after rigorous testing in Development (Dev) and Quality Assurance (QAT) environments, ensuring reliability and effectiveness."
+        "Designed and developed a high-performance Console Application using C# to automate bulk data uploads from Excel spreadsheets to MySQL databases, streamlining data management workflows.",
+        "Implemented automated data processing pipelines, reducing manual errors and improving data accuracy, resulting in enhanced operational efficiency.",
+        "Conducted comprehensive testing in Development (Dev) and User Acceptance Testing (UAT) environments, ensuring seamless production deployment and reliability of the application."
       ],
-      technologies: ["C#", "Excel", "MySQL", "Automation"],
+      technologies: ["C#", "Excel Automation", "MySQL", "Data Processing", "Quality Assurance"]
     },
     {
       year: "Jan, 2023 – May, 2023",
       role: "Researcher",
-      company: "Networks Lab, IIITD",
+      company: "Networks Lab, IIITD (in collaboration with the Ministry of Rural Development)",
       description: [
-        "Conducted in-depth analysis of the LokOS Mobile Application's response time in collaboration with the Ministry of Rural Development.",
-        "Developed automation scripts using the Appium Testing Framework for streamlining Self-Help Group (SHG) data creation.",
-        "Utilized tools like Appium Inspector, Charles Proxy, and MITM Proxy for data packet analysis and decision-making.",
+        "Automated the testing of the LokOS application using Appium, focusing on SHG profile uploads to identify performance bottlenecks under varying network conditions.",
+        "Conducted thorough performance testing by simulating data uploads of SHGs containing black and color images (3.18MB and 21MB) at different network speeds (256Kbps, 512Kbps, and 1Mbps).",
+        "Identified key issues impacting data upload efficiency, including lack of upload resumption, uncompressed image files, and absence of upload progress visibility.",
+        "Proposed critical improvements, such as image compression, resumable uploads, and data fragmentation based on network conditions, to enhance data transfer reliability.",
       ],
-      technologies: ["Java", "Appium", "Charles Proxy", "MITM Proxy"],
+      technologies: ["Java", "Appium", "Charles Proxy", "MITM Proxy", "Test Automation", "Mobile Performance Testing"],
     },
   ];
 
@@ -111,7 +111,7 @@ const Experience = () => {
           </p>
         </motion.div>
 
-        {/* New Experience Counter */}
+        {/*Experience Counter */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           whileInView={{ opacity: 1, scale: 1 }}
