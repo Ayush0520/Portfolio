@@ -191,7 +191,7 @@ const Navbar = () => {
                             link.onClick();
                             setOpen(false);
                           }}
-                          className="hover:text-gray-300 transition-all duration-300 inline-block"
+                          className="hover:text-gray-300 transition-all duration-300 inline-block uppercase"
                         >
                           {link.name}
                         </button>
@@ -199,7 +199,7 @@ const Navbar = () => {
                         <Link
                           to={link.link}
                           onClick={() => setOpen(false)}
-                          className="hover:text-gray-300 transition-all duration-300 inline-block"
+                          className="hover:text-gray-300 transition-all duration-300 inline-block uppercase"
                         >
                           {link.name}
                         </Link>

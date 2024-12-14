@@ -98,19 +98,27 @@ const Home = () => {
               "url('https://www.livemint.com/lm-img/img/2024/08/26/1600x900/christopher-gower-m_HRfLhgABo-unsplash_1724660492647_1724660500830.jpg')",
           }}
         >
-          {/* Translucent Content Box */}
           <div className="bg-black/50 flex flex-col items-center justify-center p-8 text-center w-full h-full">
-          <h2 className="text-4xl font-serif text-white mb-6 tracking-wide uppercase drop-shadow-lg">
-            Check Out My Résumé!
-          </h2>
-          <a
-            href="your-resume-url.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-block px-8 py-3 border-2 border-white text-white rounded-full text-lg font-semibold tracking-wider shadow-md hover:bg-white hover:text-black hover:shadow-lg transition-transform transform hover:scale-105"
-          >
-            Grab A Copy
-          </a>
+            <h2 className="text-4xl font-serif text-white mb-6 tracking-wide uppercase drop-shadow-lg">
+              Check Out My Résumé!
+            </h2>
+            <div className="flex gap-4">
+              <a
+                href="Ayush_Resume.pdf"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block px-8 py-3 border-2 border-white text-white rounded-full text-lg font-semibold tracking-wider shadow-md hover:bg-white hover:text-black hover:shadow-lg transition-transform transform hover:scale-105"
+              >
+                View Resume
+              </a>
+              <a
+                href="Ayush_Resume.pdf"
+                download
+                className="inline-block px-8 py-3 border-2 border-white text-white rounded-full text-lg font-semibold tracking-wider shadow-md hover:bg-white hover:text-black hover:shadow-lg transition-transform transform hover:scale-105"
+              >
+                Download Resume
+              </a>
+            </div>
           </div>
         </div>
       </section>
