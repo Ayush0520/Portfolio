@@ -20,7 +20,7 @@ const Navbar = () => {
     { name: 'About', link: "/about" },
     { name: 'Blogs', link: "/blog" },
     {
-      name: 'CONTACT',
+      name: 'Contact',
       link: "#contact",
       onClick: () => {
         const footer = document.getElementById('contact');
