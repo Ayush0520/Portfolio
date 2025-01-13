@@ -9,11 +9,11 @@ const Experience = () => {
       role: "Software Developer",
       company: "GEP (Full-time)",
       description: [
-        "Spearheaded the integration of Field Services application into the Smart application, enhancing functionality, streamlining workflows, and improving operational efficiency across the app ecosystem.",
-        "Revamping and modernizing the architecture of the Smart app, replacing legacy systems with a scalable and high-performance structure to boost speed, maintainability, and user experience.",
-        "Overseeing and maintaining the Inventory application, managing bug fixes and ensuring stable performance until its integration into the Smart platform.",
+        "Led the integration of the Field Services and Auction module into the Quantum platform, enabling users to seam- lessly manage tasks without the need for a separate application, resulting in a 50% improvement in operational efficiency.",
+        "Revamping the Quantum app’s architecture, transitioning to a modern structure that achieved 40% faster load times, a 30% reduction in app size, and significantly improved code maintainability.",
+        "Overseeing and maintaining the Inventory app, managing bug fixes and ensuring 100% uptime until integration into the Smart application.",
       ],
-      technologies: ["React Native", "Redux", "Mobile Development", "Code Refactoring"],
+      technologies: ["React Native", "Redux", "Mobile Development", "ASP.NET", "Microsoft SQL Server"],
     },
     {
       year: "Jan, 2022 – Dec, 2023",
@@ -31,11 +31,11 @@ const Experience = () => {
       role: "Web Developer",
       company: "IIITD (in collaboration with the Ph.D. Admin Office and Prof. Pankaj Jalote)",
       description: [
-        "Designed, developed, and deployed a Ph.D. Management Portal on the college network, streamlining academic administrative tasks for Ph.D. administrators and students.",
-        "Student Database Management: Streamlined profile creation, yearly reviews, and thesis review processes.",
+        "Designed, developed, and deployed a Ph.D. Management Portal on the college network, streamlining academic administrative tasks for Ph.D. administrators and students, reducing manual workload by 60%.",
+        "Student Database Management: Streamlined Profile creation, yearly reviews, and thesis review processes.",
         "Stipend Management: Automated stipend tracking and contingency logbook updates for improved accuracy.",
         "Exam Invigilation Duty Allocation: Engineered and implemented an optimized algorithm for fair and efficient duty assignment.",
-        "Developed and deployed the Exam Invigilation Algorithm, successfully operational since March 2023, and used across 7+ exam seasons to allocate invigilation duties seamlessly.",
+        "Developed and deployed the Exam Invigilation Algorithm, successfully operational since March 2023, and used across 10+ exam seasons to allocate invigilation duties seamlessly.",
       ],
       technologies: ["Django", "ReactJS", "TailwindCSS", "SQL", "Automation", "Web Development"]
     },
@@ -56,11 +56,11 @@ const Experience = () => {
       role: "Software Engineer Intern",
       company: "GEP Worldwide",
       description: [
-        "Designed and developed a high-performance Console Application using C# to automate bulk data uploads from Excel spreadsheets to MySQL databases, streamlining data management workflows.",
+        "Developed and deployed a console application to automate bulk data uploads from Excel to Microsoft SQL Server, reducing manual effort by 85% and improving data accuracy by 30%.",
         "Implemented automated data processing pipelines, reducing manual errors and improving data accuracy, resulting in enhanced operational efficiency.",
         "Conducted comprehensive testing in Development (Dev) and User Acceptance Testing (UAT) environments, ensuring seamless production deployment and reliability of the application."
       ],
-      technologies: ["C#", "Excel Automation", "MySQL", "Data Processing", "Quality Assurance"]
+      technologies: ["C#", "ASP.NET", "Microsoft SQL Server", "Excel Automation", "Data Processing", "Quality Assurance"]
     },
     {
       year: "Jan, 2023 – May, 2023",

@@ -7,6 +7,14 @@ const Projects = () => {
 
   const projectData = [
     {
+      title: "Jira AI-Agent",
+      brief: "The JIRA AI Agent is a tailored solution for corporate teams, leveraging AI-powered semantic search and historical data to resolve Jira queries efficiently with optimized webhook management.",
+      description: "The JIRA AI Agent is an advanced solution designed to efficiently resolve Jira queries by leveraging historical data and semantic search. It features a locally hosted TinyLLaMA-based chatbot for context-driven responses and a user-friendly Streamlit frontend. The backend, built with Flask, Gunicorn, Celery, and Redis, ensures scalable and efficient task handling. Semantic embeddings and historical data management are powered by Weaviate with Cohere integration. Webhook management is optimized using ngrok for secure handling and batch processing for efficiency. Hosted on an Azure VM, it seamlessly updates the database with ticket data using Jira webhooks and REST APIs, providing a tailored experience for corporate teams with unique databases for each..",
+      imageSrc: "https://img.freepik.com/premium-vector/ai-artificial-intelligence-icon-illustration_92086-945.jpg",
+      viewSource: "https://github.com/atyant20039/IP-PhD-Management-Portal",
+      viewSite: "https://drive.google.com/drive/folders/17CO5-ou_N7diD3YrhLwfxYspxbNxPvZN?usp=sharing",
+    },
+    {
       title: "Ph.D. Management Portal",
       brief: "A robust portal for managing Ph.D. student records, automating administrative tasks with seamless user experience.",
       description: "Developed and deployed a Ph.D. Management Portal to automate academic workflows, including Student Database Management, Stipend Tracking, and Exam Invigilation Duty Allocation. Implemented an optimized algorithm for invigilation duties, operational since March 2023, managing 7+ exam seasons seamlessly.",
@@ -47,14 +55,14 @@ const Projects = () => {
       viewSource: "https://github.com/vibhorag101/LokOS_Automation",
       note: "Conducted in collaboration with the Ministry of Rural Development, India."
     },
-    {
-      title: "YouTube-Layer",
-      brief: "A secure cloud-based platform for YouTubers and Editors to collaborate on video content.",
-      description: "Developing a cloud-based collaboration platform enabling YouTubers and Editors to securely manage video workflows without sharing full YouTube account access. The platform integrates YouTube APIs for video uploads, Azure Key Vault for secure credential management, and Azure Blob Storage for secure file handling. Key features include secure user management, collaboration workflows, and video approval pipelines.",
-      imageSrc: "https://cdn.pixabay.com/photo/2021/05/24/16/24/youtube-6279763_1280.png",
-      viewSource: "https://github.com/Ayush0520/youtube-layer",
-      note: "Project is currently in progress, demonstrating secure and scalable cloud-based video collaboration."
-    },    
+    // {
+    //   title: "YouTube-Layer",
+    //   brief: "A secure cloud-based platform for YouTubers and Editors to collaborate on video content.",
+    //   description: "Developing a cloud-based collaboration platform enabling YouTubers and Editors to securely manage video workflows without sharing full YouTube account access. The platform integrates YouTube APIs for video uploads, Azure Key Vault for secure credential management, and Azure Blob Storage for secure file handling. Key features include secure user management, collaboration workflows, and video approval pipelines.",
+    //   imageSrc: "https://cdn.pixabay.com/photo/2021/05/24/16/24/youtube-6279763_1280.png",
+    //   viewSource: "https://github.com/Ayush0520/youtube-layer",
+    //   note: "Project is currently in progress, demonstrating secure and scalable cloud-based video collaboration."
+    // },    
   ];
 
   const handleSeeMore = (project) => {
