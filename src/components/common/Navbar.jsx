@@ -214,19 +214,11 @@ const Navbar = () => {
                   >
                     <a
                       href="Ayush_Resume.pdf"
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      className="inline-flex items-center gap-2 px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-black transition-all duration-300"
-                      onClick={() => setOpen(false)}
-                    >
-                      <span>View</span>
-                    </a>
-                    <a
-                      href="Ayush_Resume.pdf"
                       download
                       className="inline-flex items-center gap-2 px-6 py-2 border-2 border-white rounded-full hover:bg-white hover:text-black transition-all duration-300"
                       onClick={() => setOpen(false)}
                     >
+                      <span>Resume</span>
                       <FaDownload />
                     </a>
                   </motion.li>
